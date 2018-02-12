@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DEC612880AFFEEC8C2C318D /* Pods_timeset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC139E585F3E5EFEC2C5CA7E /* Pods_timeset.framework */; };
 		EBAD19AE203087BC00E5B605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19AD203087BC00E5B605 /* AppDelegate.swift */; };
 		EBAD19B0203087BC00E5B605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19AF203087BC00E5B605 /* ViewController.swift */; };
 		EBAD19B3203087BC00E5B605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAD19B1203087BC00E5B605 /* Main.storyboard */; };
 		EBAD19B5203087BC00E5B605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAD19B4203087BC00E5B605 /* Assets.xcassets */; };
 		EBAD19B8203087BC00E5B605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAD19B6203087BC00E5B605 /* LaunchScreen.storyboard */; };
+		EBAD19C02030ADFC00E5B605 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19BF2030ADFC00E5B605 /* Task.swift */; };
+		EBAD19C22030AE6800E5B605 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19C12030AE6800E5B605 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25A76B50D2A601C8A464B816 /* Pods-timeset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timeset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-timeset/Pods-timeset.debug.xcconfig"; sourceTree = "<group>"; };
+		A19D9CC05BDEFA60D764BB5E /* Pods-timeset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timeset.release.xcconfig"; path = "Pods/Target Support Files/Pods-timeset/Pods-timeset.release.xcconfig"; sourceTree = "<group>"; };
+		BC139E585F3E5EFEC2C5CA7E /* Pods_timeset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timeset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAD19AA203087BC00E5B605 /* timeset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAD19AD203087BC00E5B605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAD19AF203087BC00E5B605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		EBAD19B4203087BC00E5B605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBAD19B7203087BC00E5B605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBAD19B9203087BD00E5B605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAD19BF2030ADFC00E5B605 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EBAD19C12030AE6800E5B605 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEC612880AFFEEC8C2C318D /* Pods_timeset.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9683E6D0C2B1C2BBF1CC1BD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25A76B50D2A601C8A464B816 /* Pods-timeset.debug.xcconfig */,
+				A19D9CC05BDEFA60D764BB5E /* Pods-timeset.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EBAD19A1203087BC00E5B605 = {
 			isa = PBXGroup;
 			children = (
 				EBAD19AC203087BC00E5B605 /* timeset */,
 				EBAD19AB203087BC00E5B605 /* Products */,
+				9683E6D0C2B1C2BBF1CC1BD8 /* Pods */,
+				F3972D966A0221416040E0CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +76,22 @@
 			children = (
 				EBAD19AD203087BC00E5B605 /* AppDelegate.swift */,
 				EBAD19AF203087BC00E5B605 /* ViewController.swift */,
+				EBAD19C12030AE6800E5B605 /* InputViewController.swift */,
 				EBAD19B1203087BC00E5B605 /* Main.storyboard */,
 				EBAD19B4203087BC00E5B605 /* Assets.xcassets */,
+				EBAD19BF2030ADFC00E5B605 /* Task.swift */,
 				EBAD19B6203087BC00E5B605 /* LaunchScreen.storyboard */,
 				EBAD19B9203087BD00E5B605 /* Info.plist */,
 			);
 			path = timeset;
+			sourceTree = "<group>";
+		};
+		F3972D966A0221416040E0CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC139E585F3E5EFEC2C5CA7E /* Pods_timeset.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBAD19BC203087BD00E5B605 /* Build configuration list for PBXNativeTarget "timeset" */;
 			buildPhases = (
+				8BE2E8C36AC23CBBF35C998B /* [CP] Check Pods Manifest.lock */,
 				EBAD19A6203087BC00E5B605 /* Sources */,
 				EBAD19A7203087BC00E5B605 /* Frameworks */,
 				EBAD19A8203087BC00E5B605 /* Resources */,
+				1DE11B5FA239F9AEC13B7642 /* [CP] Embed Pods Frameworks */,
+				586CA45E5E3ECB03B9CDAB02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					EBAD19A9203087BC00E5B605 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 83ZXNP2696;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +165,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DE11B5FA239F9AEC13B7642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-timeset/Pods-timeset-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		586CA45E5E3ECB03B9CDAB02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-timeset/Pods-timeset-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BE2E8C36AC23CBBF35C998B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBAD19A6203087BC00E5B605 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBAD19B0203087BC00E5B605 /* ViewController.swift in Sources */,
+				EBAD19C02030ADFC00E5B605 /* Task.swift in Sources */,
 				EBAD19AE203087BC00E5B605 /* AppDelegate.swift in Sources */,
+				EBAD19C22030AE6800E5B605 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +342,10 @@
 		};
 		EBAD19BD203087BD00E5B605 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A76B50D2A601C8A464B816 /* Pods-timeset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 83ZXNP2696;
 				INFOPLIST_FILE = timeset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yuuka.katsushima.timeset;
@@ -270,8 +356,10 @@
 		};
 		EBAD19BE203087BD00E5B605 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19D9CC05BDEFA60D764BB5E /* Pods-timeset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 83ZXNP2696;
 				INFOPLIST_FILE = timeset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yuuka.katsushima.timeset;
@@ -299,6 +387,7 @@
 				EBAD19BE203087BD00E5B605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
