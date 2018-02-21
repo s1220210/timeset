@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6DEC612880AFFEEC8C2C318D /* Pods_timeset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC139E585F3E5EFEC2C5CA7E /* Pods_timeset.framework */; };
+		EB78F4F920374CB800B6D6F7 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78F4F820374CB800B6D6F7 /* Week.swift */; };
 		EBAD19AE203087BC00E5B605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19AD203087BC00E5B605 /* AppDelegate.swift */; };
 		EBAD19B0203087BC00E5B605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19AF203087BC00E5B605 /* ViewController.swift */; };
 		EBAD19B3203087BC00E5B605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAD19B1203087BC00E5B605 /* Main.storyboard */; };
@@ -15,12 +16,17 @@
 		EBAD19B8203087BC00E5B605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAD19B6203087BC00E5B605 /* LaunchScreen.storyboard */; };
 		EBAD19C02030ADFC00E5B605 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19BF2030ADFC00E5B605 /* Task.swift */; };
 		EBAD19C22030AE6800E5B605 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD19C12030AE6800E5B605 /* InputViewController.swift */; };
+		EBD0CA7F20334DC1004EB4EE /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0CA7E20334DC1004EB4EE /* ScheduleController.swift */; };
+		EBD0CA8120335001004EB4EE /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0CA8020335001004EB4EE /* ScheduleViewController.swift */; };
+		EBD0CA8320340D9F004EB4EE /* SetWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0CA8220340D9F004EB4EE /* SetWeekViewController.swift */; };
+		EBD0CA8520340DB2004EB4EE /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0CA8420340DB2004EB4EE /* SetTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25A76B50D2A601C8A464B816 /* Pods-timeset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timeset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-timeset/Pods-timeset.debug.xcconfig"; sourceTree = "<group>"; };
 		A19D9CC05BDEFA60D764BB5E /* Pods-timeset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timeset.release.xcconfig"; path = "Pods/Target Support Files/Pods-timeset/Pods-timeset.release.xcconfig"; sourceTree = "<group>"; };
 		BC139E585F3E5EFEC2C5CA7E /* Pods_timeset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timeset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB78F4F820374CB800B6D6F7 /* Week.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		EBAD19AA203087BC00E5B605 /* timeset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAD19AD203087BC00E5B605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAD19AF203087BC00E5B605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,10 @@
 		EBAD19B9203087BD00E5B605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBAD19BF2030ADFC00E5B605 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		EBAD19C12030AE6800E5B605 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		EBD0CA7E20334DC1004EB4EE /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		EBD0CA8020335001004EB4EE /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		EBD0CA8220340D9F004EB4EE /* SetWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetWeekViewController.swift; sourceTree = "<group>"; };
+		EBD0CA8420340DB2004EB4EE /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +88,13 @@
 				EBAD19AF203087BC00E5B605 /* ViewController.swift */,
 				EBAD19C12030AE6800E5B605 /* InputViewController.swift */,
 				EBAD19B1203087BC00E5B605 /* Main.storyboard */,
+				EBD0CA8220340D9F004EB4EE /* SetWeekViewController.swift */,
+				EBD0CA8420340DB2004EB4EE /* SetTimeViewController.swift */,
+				EBD0CA8020335001004EB4EE /* ScheduleViewController.swift */,
+				EBD0CA7E20334DC1004EB4EE /* ScheduleController.swift */,
 				EBAD19B4203087BC00E5B605 /* Assets.xcassets */,
 				EBAD19BF2030ADFC00E5B605 /* Task.swift */,
+				EB78F4F820374CB800B6D6F7 /* Week.swift */,
 				EBAD19B6203087BC00E5B605 /* LaunchScreen.storyboard */,
 				EBAD19B9203087BD00E5B605 /* Info.plist */,
 			);
@@ -218,9 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD0CA8520340DB2004EB4EE /* SetTimeViewController.swift in Sources */,
 				EBAD19B0203087BC00E5B605 /* ViewController.swift in Sources */,
+				EBD0CA7F20334DC1004EB4EE /* ScheduleController.swift in Sources */,
 				EBAD19C02030ADFC00E5B605 /* Task.swift in Sources */,
+				EBD0CA8120335001004EB4EE /* ScheduleViewController.swift in Sources */,
+				EB78F4F920374CB800B6D6F7 /* Week.swift in Sources */,
 				EBAD19AE203087BC00E5B605 /* AppDelegate.swift in Sources */,
+				EBD0CA8320340D9F004EB4EE /* SetWeekViewController.swift in Sources */,
 				EBAD19C22030AE6800E5B605 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

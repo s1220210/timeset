@@ -13,15 +13,16 @@ import UserNotifications    // 追加
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    // Realmインスタンスを取得する
     @IBOutlet weak var searchBar: UISearchBar!
-    let realm = try! Realm()  // ←追加
+    
+    let realm = try! Realm()  // Realmインスタンスを取得する
     
     // DB内のタスクが格納されるリスト。
     // 日付近い順\順でソート：降順
     // 以降内容をアップデートするとリスト内は自動的に更新される。
     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: false)  // ←追加
 
+    //var enable: [Int] = [0, 0, 0, 0, 0, 0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,12 +118,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     // segue で画面遷移するに呼ばれる
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let inputViewController:InputViewController = segue.destination as! InputViewController
         
-        if segue.identifier == "cellSegue" {
+        if segue.identifier == "scheSegue"{
+            print("DEBUG: scheSegue")
+            //let scheduleViewController:ScheduleViewController = segue.destination as! ScheduleViewController
+            //let setWeekViewController:SetWeekViewController = segue.destination as! SetWeekViewController
+            
+        
+        }
+        
+        else if segue.identifier == "cellSegue" {
+            let inputViewController:InputViewController = segue.destination as! InputViewController
+            
             let indexPath = self.tableView.indexPathForSelectedRow
             inputViewController.task = taskArray[indexPath!.row]
-        } else {
+        }
+
+        else {
+            let inputViewController:InputViewController = segue.destination as! InputViewController
+            
             let task = Task()
             task.date = NSDate()
             
@@ -132,6 +146,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             inputViewController.task = task
         }
+        
+        
+        
     }
     // 入力画面から戻ってきた時に TableView を更新させる
     override func viewWillAppear(_ animated: Bool) {

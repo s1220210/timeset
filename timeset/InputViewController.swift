@@ -53,6 +53,7 @@ class InputViewController: UIViewController {
          setNotification(task: task)
         super.viewWillDisappear(animated)
     }
+    
     // タスクのローカル通知を登録する
     func setNotification(task: Task) {
         let content = UNMutableNotificationContent()
